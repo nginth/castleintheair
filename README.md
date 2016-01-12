@@ -1,1 +1,1 @@
-This will eventually be an interactive website of various stock market distasters.
+This will eventually be an interactive website of charts of various stock market distasters.
