@@ -1,5 +1,7 @@
 ##Install
+Start up your favorite server, run bower.
 ```
+python -m SimpleHTTPServer <port>
 bower install
 ```
 yup.
