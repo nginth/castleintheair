@@ -26,10 +26,17 @@ function makeDJIChart(djiJSON, callback){
             djiData.datasets[0].data.push(element.avg);
         }
     });
+
+    //incoming hack
+    for(var i = 0; i < djiData.labels.length; i++){
+        if(!(i % 6 == 0)){
+            djiData.labels[i] = "";
+        }
+    }
     
     var djiContext = $("#dji").get(0).getContext("2d");
     var djiChart = new Chart(djiContext).Line(djiData, {
-        datasetStrokeWidth: 3
+        pointDot: false
     });
 
 }
