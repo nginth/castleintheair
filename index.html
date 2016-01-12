@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link href="static/img/favicon.ico" rel="icon" type="image/x-icon"/>
   </head>
   <body>
 
@@ -23,12 +24,18 @@
           <button type="button" class="btn btn-default btn-md" onclick="randomize();">Randomize</button>
         </div>
       </div>
+      <div class="row">
+        <div class="col-md-3">
+          <canvas id="dji" width="400" height="400"></canvas>
+        </div>
+      </div>
     </div>
     
     <script type="text/javascript" src="bower_components/Chart.js/Chart.js"></script>
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="src/js/mycharts.js"></script>
+    <script type="text/javascript" src="src/js/djiHistoryChart.js"></script>
   </body>
 
 </html>
