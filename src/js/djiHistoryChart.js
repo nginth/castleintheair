@@ -36,7 +36,9 @@ function makeDJIChart(djiJSON, callback){
     
     var djiContext = $("#dji").get(0).getContext("2d");
     var djiChart = new Chart(djiContext).Line(djiData, {
-        pointDot: false
+        pointDot: false,
+        responsive: true,
+        maintainAspectRation: false
     });
 
 }
