@@ -12,22 +12,21 @@
     <link href="static/img/favicon.ico" rel="icon" type="image/x-icon"/>
   </head>
   <body>
-
-    <div class="container-fluid">
+    <div class= "container-fluid">  
       <div class="row">
-        <div class="col-md-3">
-          <canvas id="chart1" width="400" height="400"></canvas>
+        <div class="col-md-9">
+          <div>
+          <h2>Dow Jones Industrial Average 1929-1945 (adjusted for inflation)</h2>
+            <canvas id="dji"></canvas>
+          </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-3">
-          <button type="button" class="btn btn-default btn-md" onclick="randomize();">Randomize</button>
-        </div>
-      </div>
-      <div><h2>Dow Jones Industrial Average 1929-1945 (adjusted for inflation)</h2></div>
-      <div class="row">
-        <div class="col-md-3">
-          <canvas id="dji" width="800" height="800"></canvas>
+        <div class="col-md-9">
+          <input type="range" 
+                 value="100" step="1" min="0" max="1000" onchange="showOutput(this.value);">
+          <br>
+          <span id="dji-output">100</span>
         </div>
       </div>
     </div>
@@ -35,8 +34,8 @@
     <script type="text/javascript" src="bower_components/Chart.js/Chart.js"></script>
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="src/js/mycharts.js"></script>
     <script type="text/javascript" src="src/js/djiHistoryChart.js"></script>
+    <script type="text/javascript" src="src/js/djiForm.js"></script>
   </body>
 
 </html>
